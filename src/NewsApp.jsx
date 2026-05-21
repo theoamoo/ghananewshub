@@ -285,7 +285,7 @@ export default function NewsApp() {
               <div style={{ width:40, height:40, borderRadius:10, background:"white", display:"flex", alignItems:"center", justifyContent:"center", fontWeight:900, color: P, fontSize:18 }}>GN</div>
               <div>
                 <div style={{ fontSize:20, fontWeight:900, letterSpacing:-0.5 }}>GhanaNews<span style={{ color: theme.accent }}>Hub</span></div>
-                <div style={{ fontSize:10, opacity:0.75, letterSpacing:1 }}>GHANA'S #1 NEWS SOURCE</div>
+                <div style={{ fontSize:10, opacity:0.75, letterSpacing:1 }}>Reliable News Hub</div>
               </div>
             </div>
 
@@ -566,7 +566,7 @@ export default function NewsApp() {
         {view === "videos" && (
           <div style={{ paddingTop:24 }}>
             <h2 style={{ fontSize:24, fontWeight:900, marginBottom:8 }}>🎬 Videos</h2>
-            <p style={{ color:"#64748B", marginBottom:24 }}>Watch and download video content from GhanaNewsHub</p>
+            <p style={{ color:"#64748B", marginBottom:24 }}>Watch and download video content from Wohonsem</p>
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(300px, 1fr))", gap:20 }}>
               {videos.filter(v => v.enabled).map(v => (
                 <Card key={v.id}>
@@ -596,7 +596,7 @@ export default function NewsApp() {
         {view === "audios" && (
           <div style={{ paddingTop:24 }}>
             <h2 style={{ fontSize:24, fontWeight:900, marginBottom:8 }}>🎵 Audio</h2>
-            <p style={{ color:"#64748B", marginBottom:24 }}>Listen to audio news and interviews from GhanaNewsHub</p>
+            <p style={{ color:"#64748B", marginBottom:24 }}>Listen to audio news and interviews from Wohonsem</p>
             <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
               {audios.filter(a => a.enabled).map(a => (
                 <Card key={a.id} style={{ padding:"16px 20px", display:"flex", alignItems:"center", gap:16 }}>
@@ -649,7 +649,7 @@ export default function NewsApp() {
         {view === "community" && (
           <div style={{ paddingTop:24, maxWidth:720, margin:"0 auto" }}>
             <h2 style={{ fontSize:24, fontWeight:900, marginBottom:4 }}>💬 Community Chat</h2>
-            <p style={{ color:"#64748B", marginBottom:20 }}>Discuss the latest news with the GhanaNewsHub community</p>
+            <p style={{ color:"#64748B", marginBottom:20 }}>Discuss the latest news with the Wohonsem community</p>
             <Card style={{ height:420, display:"flex", flexDirection:"column" }}>
               <div style={{ flex:1, overflowY:"auto", padding:20, display:"flex", flexDirection:"column", gap:14 }}>
                 {communityMsgs.map(m => (
@@ -752,7 +752,7 @@ export default function NewsApp() {
         {/* ── ADVERTISE ────────────────────────────────────────────────────── */}
         {view === "advertise" && (
           <div style={{ paddingTop:24 }}>
-            <h2 style={{ fontSize:24, fontWeight:900, marginBottom:4 }}>📢 Advertise with GhanaNewsHub</h2>
+            <h2 style={{ fontSize:24, fontWeight:900, marginBottom:4 }}>📢 Advertise with Wohonsem</h2>
             <p style={{ color:"#64748B", marginBottom:32, fontSize:15 }}>Reach over 500,000 daily readers across Ghana and the diaspora</p>
 
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fill, minmax(280px, 1fr))", gap:20, marginBottom:40 }}>
@@ -822,7 +822,7 @@ export default function NewsApp() {
             <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:24 }}>
               <div>
                 <h1 style={{ margin:0, fontSize:26, fontWeight:900 }}>⚙️ Super Admin Dashboard</h1>
-                <p style={{ color:"#64748B", margin:"4px 0 0" }}>Full control over GhanaNewsHub</p>
+                <p style={{ color:"#64748B", margin:"4px 0 0" }}>Full control over Wohonsem</p>
               </div>
               <Btn style={{ background: P, color:"white", border:"none" }} onClick={() => setThemeEditor(true)}>🎨 Change Theme</Btn>
             </div>
@@ -1067,7 +1067,7 @@ export default function NewsApp() {
                 <input value={tempTheme[key]} onChange={e => setTempTheme(t => ({...t, [key]: e.target.value}))} style={{ flex:1, padding:"8px 10px", borderRadius:6, border:"1px solid #E2E8F0", fontSize:12, fontFamily:"monospace" }} />
               </div>
             ))}
-            <div style={{ background:`linear-gradient(135deg, ${tempTheme.primary}, ${tempTheme.accent})`, borderRadius:10, padding:"16px 24px", color:"white", marginBottom:20, fontWeight:800, fontSize:15 }}>Theme Preview: GhanaNewsHub</div>
+            <div style={{ background:`linear-gradient(135deg, ${tempTheme.primary}, ${tempTheme.accent})`, borderRadius:10, padding:"16px 24px", color:"white", marginBottom:20, fontWeight:800, fontSize:15 }}>Theme Preview: Wohonsem</div>
             <div style={{ display:"flex", gap:10 }}>
               <Btn style={{ background: P, color:"white", border:"none", flex:1, textAlign:"center" }} onClick={applyTheme}>Apply Theme</Btn>
               <Btn outline color="#64748B" style={{ textAlign:"center" }} onClick={() => { setTempTheme(DEFAULT_THEME); setThemeEditor(false); }}>Reset</Btn>
